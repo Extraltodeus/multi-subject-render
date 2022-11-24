@@ -93,8 +93,13 @@ For my example I made tree penguins :
 - Not enough denoising/steps on your final blend will make it look like you used scissors on your moms Vogue catalogue and pasted the ladies onto your dads Lord of the Rings favorite poster. Don't do that.
 - Too much denoising/steps might make the characters all look the same. It's all about finding the right middle value for your needs.
 
+## Known issues
 
-A few more examples :
+- It does only render the final blend to the UI. You have to save the images (like in the settings you just don't uncheck that "save all images" checkbox and you're good).
+- There can be bugs.
+
+
+## A few more examples
 
 ![00129-603508287-DDIM-64-7 5-ac07d41f-20221122153921](https://user-images.githubusercontent.com/15731540/203713258-aaeffbf7-5772-458d-804a-d09be35531fb.png)
 
@@ -115,7 +120,7 @@ A few more examples :
 
 ![00258-4071542780-Euler a-70-7-579c005f-20221123231254](https://user-images.githubusercontent.com/15731540/203715010-216c5a8d-4f87-414a-8b85-c544349a556b.png)
 
-<sub> A nasty case of yoghurt addiction for sure. </sub>
+<sub> A nasty case of yoghurt addiction. </sub>
 
 
 ![00165-603508287-DDIM-64-7 5-ac07d41f-20221122154627](https://user-images.githubusercontent.com/15731540/203716695-ab8d5764-0e68-414f-951e-29edac4cab5b.png)
