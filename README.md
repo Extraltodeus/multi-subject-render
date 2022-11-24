@@ -115,6 +115,17 @@ Thanks to [thygate](https://github.com/thygate) for letting me blatantly copy-pa
 
 ## A few more examples
 
+### An attempt at recreating the "Distracted boyfriend" meme. Without influencing the directions in which they are looking.
+
+![00241-2439212203-Euler a-100-7 5-ac07d41f-20221124151538](https://user-images.githubusercontent.com/15731540/203824326-e3c02bb1-6318-4083-894d-4aa9e26903b2.png)
+![00287-2439212203-Euler a-100-7 5-ac07d41f-20221124151832](https://user-images.githubusercontent.com/15731540/203824335-170d9620-2d7c-4538-a529-ac7b51ac718d.png)
+![00123-60606195-DDIM-74-7 5-ac07d41f-20221124144302](https://user-images.githubusercontent.com/15731540/203824348-72f918cf-2df6-42ee-a9b6-69b7c9ff8309.png)
+![00133-1894928239-DDIM-74-7 5-ac07d41f-20221124144525](https://user-images.githubusercontent.com/15731540/203824351-84e62d31-b1c5-4f41-8bfb-b7e2e0c4b287.png)
+
+<sub> I messed up the order on the last one. </sub>
+
+
+
 ![00129-603508287-DDIM-64-7 5-ac07d41f-20221122153921](https://user-images.githubusercontent.com/15731540/203713258-aaeffbf7-5772-458d-804a-d09be35531fb.png)
 
 <sub> Aren't they cute without oxygen? </sub>
@@ -136,6 +147,15 @@ Thanks to [thygate](https://github.com/thygate) for letting me blatantly copy-pa
 <sub> MOAR KITTENS </sub>
 
 
+Now a few more groups of "super heroes" from the same batch as the first image here. Except maybe for the portraits.
+
+![00283-1347027508-DDIM-69-7 5-579c005f-20221123193425](https://user-images.githubusercontent.com/15731540/203719641-364dd072-4360-4afb-8a84-032cd5013f72.png)
+![00238-2109887726-DDIM-69-7 5-579c005f-20221123192356](https://user-images.githubusercontent.com/15731540/203719659-4be6c008-eeca-4b53-b3e3-e8f31b933ba1.png)
+![00349-3785266290-DDIM-76-7 5-579c005f-20221123194925](https://user-images.githubusercontent.com/15731540/203719670-03062253-e746-4b02-9517-f0576142e3c1.png)
+![00290-1347027509-DDIM-69-7 5-579c005f-20221123193425](https://user-images.githubusercontent.com/15731540/203719705-15dfe420-1c08-4714-8892-632df4d9f3b4.png)
+
+### Wrong settings examples
+
 ![00145-2998285171-DDIM-92-7 5-ac07d41f-20221124054225](https://user-images.githubusercontent.com/15731540/203716812-ea8a46b0-bbed-4f21-a5d3-10f231f3577c.png)
 
 <sub> This is what too low denoising on the final blend looks like. Yuk!</sub>
@@ -145,18 +165,4 @@ Thanks to [thygate](https://github.com/thygate) for letting me blatantly copy-pa
 
 
 <sub>Guess why I had to censor the lowest part. This is how too much denoising looks like. They look all the same.</sub>
-
-
-
-Now a few more groups of "super heroes" from the same batch as the first image here. Except maybe for the portraits.
-
-![00283-1347027508-DDIM-69-7 5-579c005f-20221123193425](https://user-images.githubusercontent.com/15731540/203719641-364dd072-4360-4afb-8a84-032cd5013f72.png)
-
-![00238-2109887726-DDIM-69-7 5-579c005f-20221123192356](https://user-images.githubusercontent.com/15731540/203719659-4be6c008-eeca-4b53-b3e3-e8f31b933ba1.png)
-
-![00349-3785266290-DDIM-76-7 5-579c005f-20221123194925](https://user-images.githubusercontent.com/15731540/203719670-03062253-e746-4b02-9517-f0576142e3c1.png)
-
-![00290-1347027509-DDIM-69-7 5-579c005f-20221123193425](https://user-images.githubusercontent.com/15731540/203719705-15dfe420-1c08-4714-8892-632df4d9f3b4.png)
-
-
 
