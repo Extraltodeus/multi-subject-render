@@ -14,7 +14,7 @@ import numpy as np
 
 class Script(scripts.Script):
     def title(self):
-        return "Waifu harem generator"
+        return "Multi Subject Rendering"
 
     def ui(self, is_img2img):
         if is_img2img: return
