@@ -1,11 +1,20 @@
-Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) repository.
+
 # waifu-harem-diffusion
 Generate entire harems of waifus using stable diffusion easily! 
+
+Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) repository.
 
 ![00157-1355719032-DDIM-64-7 5-579c005f-20221123190321](https://user-images.githubusercontent.com/15731540/203708003-9cbe7695-f512-4d7c-9cbb-54f8d6cb17f0.png)
 
 <sub>_Kyaaaaaaaaaaaaaaaaa!_</sub>
 
+## Installation
+
+- Run that command from the webui directory :
+
+>git clone https://github.com/isl-org/MiDaS.git repositories/midas
+
+- Copy the two scripts from this repository into your scripts folder.
 
 ## The look
 
@@ -97,6 +106,11 @@ For my example I made tree penguins :
 
 - It does only render the final blend to the UI. You have to save the images (like in the settings you just don't uncheck that "save all images" checkbox and you're good).
 - There can be bugs.
+
+
+## Credits :
+
+Thanks to [thygate](https://github.com/thygate) for letting me blatantly copy-paste some of his functions for the depth analysis.
 
 
 ## A few more examples
