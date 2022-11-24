@@ -12,7 +12,7 @@ from skimage.util import random_noise
 import gradio as gr
 import numpy as np
 import sys
-sys.path.insert(1, sys.path[0])
+sys.path.insert(1, 'extensions/multi-subject-render/scripts')
 
 class Script(scripts.Script):
     def title(self):
