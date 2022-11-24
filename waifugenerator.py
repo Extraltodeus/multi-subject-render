@@ -276,6 +276,6 @@ class Script(scripts.Script):
                 eta=p.eta
                 )
             final_blend = process_images(img2img_processing)
-            p.subseed = p.subseed + 1 if p.subseed_strength > 0
-            p.seed    = p.seed    + 1 if p.subseed_strength == 0
+            p.subseed = p.subseed + 1 if p.subseed_strength  > 0 else p.subseed
+            p.seed    = p.seed    + 1 if p.subseed_strength == 0 else p.seed
         return final_blend
