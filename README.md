@@ -18,7 +18,7 @@ Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.c
 
 >git clone https://github.com/isl-org/MiDaS.git repositories/midas
 
-- Copy the two scripts from this repository into your scripts folder.
+- Copy the two scripts from this repository (so that one you're reading right now) into your scripts folder.
 
 Alternatively you can just copy the url of that repository into the extension tab :
 
