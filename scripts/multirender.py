@@ -11,6 +11,8 @@ import random
 from skimage.util import random_noise
 import gradio as gr
 import numpy as np
+import sys
+sys.path.insert(1, sys.path[0])
 
 class Script(scripts.Script):
     def title(self):
@@ -109,7 +111,7 @@ class Script(scripts.Script):
                     foregen_reverse_order
                     ):
         initial_CLIP = opts.data["CLIP_stop_at_last_layers"]
-        import scripts.simple_depthmap as sdmg
+        import simple_depthmap as sdmg
         sdmg = sdmg.SimpleDepthMapGenerator() #import midas
 
         def cut_depth_mask(img,mask_img,foregen_treshold):
