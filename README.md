@@ -18,6 +18,7 @@ Generate entire harems of waifus using stable diffusion easily!
 First it creates your background image, then your foreground subjects, then does a depth analysis on them, cut their backgrounds, paste them onto your background and then does an img2img for a smooth blend!
 
 <sup>It will cut around that lady with scissors made of code</sup>
+
 ![image](https://user-images.githubusercontent.com/15731540/203715689-791ff6d7-e1cd-4c86-99eb-7ecb2e60859a.png)
 
 
@@ -30,6 +31,7 @@ First it creates your background image, then your foreground subjects, then does
 For my example I decided to generate a bowling alley at 512x512 pixels :
 
 <sup> I used the main prompt text box in the main UI to do that. Just wrote "a bowling alley". </sup>
+
 ![00158-2629831387-Euler a-22-7 5-ac07d41f-1233221312123132](https://user-images.githubusercontent.com/15731540/203710944-cf2e2290-0374-427e-9415-36a3bc248530.png)
 
 
