@@ -114,6 +114,8 @@ For my example I made tree penguins :
 ## Known issues
 
 - It does only render the final blend to the UI. You have to save the images (like in the settings you just don't uncheck that "save all images" checkbox and you're good).
+- "List index out of range" might be barfed into your terminal if you interrupt a generation. I missed a state interrupt somewhere. It does not cause any problem by itself.
+- Do not use the "high res fix" checkbox. The blend size slider at the end will trigger it if you use a higher resolution than your background image. So keep your normal UI size sliders near 512*512.
 - There can be bugs.
 
 
