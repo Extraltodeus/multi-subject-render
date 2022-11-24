@@ -131,7 +131,7 @@ A few more examples :
 ![affafasffasffasfas - Copie](https://user-images.githubusercontent.com/15731540/203717083-5938b8c5-2e20-45a0-9871-2558b7f7ff50.png)
 
 
-<sub>Guess why I had to censor the lowest part?</sub>
+<sub>Guess why I had to censor the lowest part. This is how too much denoising looks like. They look all the same.</sub>
 
 <sub></sub>
 <sub></sub>
