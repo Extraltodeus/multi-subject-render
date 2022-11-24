@@ -31,8 +31,6 @@ First it creates your background image, then your foreground subjects, then does
 
 For my example I decided to generate a bowling alley at 512x512 pixels :
 
-<sup> I used the main prompt text box in the main UI to do that. Just wrote "a bowling alley". </sup>
-
 ![00158-2629831387-Euler a-22-7 5-ac07d41f-1233221312123132](https://user-images.githubusercontent.com/15731540/203710944-cf2e2290-0374-427e-9415-36a3bc248530.png)
 
 
