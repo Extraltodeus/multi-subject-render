@@ -1,5 +1,5 @@
 
-# waifu-harem-diffusion
+# multi-subject-render
 Generate entire harems of waifus using stable diffusion easily! 
 
 Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) repository.
