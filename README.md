@@ -126,28 +126,17 @@ Thanks to [thygate](https://github.com/thygate) for letting me blatantly copy-pa
 
 <sub> I messed up the order on the last one. </sub>
 
-
-
 ![00129-603508287-DDIM-64-7 5-ac07d41f-20221122153921](https://user-images.githubusercontent.com/15731540/203713258-aaeffbf7-5772-458d-804a-d09be35531fb.png)
 
 <sub> Aren't they cute without oxygen? </sub>
-
-
-![00254-1268283421-Euler a-68-7 5-ac07d41f-20221124060832](https://user-images.githubusercontent.com/15731540/203714476-c07a389d-25ee-48c7-9079-a95ff6c03248.png)
-
-<sub> You can also make absolute non-sens like Jesus, a t-rex and santa.</sub>
-
-
 
 ![00051-3908280031-DPM++ 2M-74-7 5-ac07d41f-20221122145842](https://user-images.githubusercontent.com/15731540/203714620-e45dc7d6-ec26-4aee-b0e3-e1055d98c850.png)
 
 <sub>Of course you can make a harem just for yourself.</sub>
 
-
 ![00165-603508287-DDIM-64-7 5-ac07d41f-20221122154627](https://user-images.githubusercontent.com/15731540/203716695-ab8d5764-0e68-414f-951e-29edac4cab5b.png)
 
 <sub> MOAR KITTENS </sub>
-
 
 Now a few more groups of "super heroes" from the same batch as the first image here. Except maybe for the portraits.
 
@@ -161,6 +150,10 @@ Now a few more groups of "super heroes" from the same batch as the first image h
 ![00145-2998285171-DDIM-92-7 5-ac07d41f-20221124054225](https://user-images.githubusercontent.com/15731540/203716812-ea8a46b0-bbed-4f21-a5d3-10f231f3577c.png)
 
 <sub> This is what too low denoising on the final blend looks like. Yuk!</sub>
+
+![00254-1268283421-Euler a-68-7 5-ac07d41f-20221124060832](https://user-images.githubusercontent.com/15731540/203714476-c07a389d-25ee-48c7-9079-a95ff6c03248.png)
+
+<sub> Same issue here. Looks like a funny kid collage. Grandma will love it because you typed your prompts with love and she knows it.</sub>
 
 
 ![affafasffasffasfas - Copie](https://user-images.githubusercontent.com/15731540/203717083-5938b8c5-2e20-45a0-9871-2558b7f7ff50.png)
