@@ -20,6 +20,16 @@ Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.c
 
 - Copy the two scripts from this repository into your scripts folder.
 
+Alternatively you can just copy the url of that repository into the extension tab :
+
+![image](https://user-images.githubusercontent.com/15731540/203840132-cd8ce6a2-2843-4a96-8e35-b819af7bc01f.png)
+
+OR copy that repository in your extension folder :
+
+![image](https://user-images.githubusercontent.com/15731540/203840272-83cccb24-4417-44bc-99df-e45eb5f3360c.png)
+
+You might need to restart the whole UI. Maybe twice.
+
 ## The look
 
 ![image](https://user-images.githubusercontent.com/15731540/203795296-3b917ab2-f0a3-4202-8b17-8d115b22bbe8.png)
