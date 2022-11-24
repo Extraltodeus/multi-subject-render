@@ -10,7 +10,7 @@ Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.c
 
 ### For more examples scroll all the way down!
 
-## Installation
+## 💥💥💥 Installation 💥💥💥
 
 - Run that command from the webui directory :
 
