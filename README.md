@@ -14,6 +14,8 @@ Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.c
 
 ## 💥 Installation 💥
 
+**EDIT : for now copy simple_depthmap.py into your /scripts folder or it won't work. I'm fixing it.**
+
 - Run that command from the webui directory :
 
 >git clone https://github.com/isl-org/MiDaS.git repositories/midas
