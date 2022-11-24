@@ -131,12 +131,6 @@ Thanks to [thygate](https://github.com/thygate) for letting me blatantly copy-pa
 <sub>Of course you can make a harem just for yourself.</sub>
 
 
-
-![00258-4071542780-Euler a-70-7-579c005f-20221123231254](https://user-images.githubusercontent.com/15731540/203715010-216c5a8d-4f87-414a-8b85-c544349a556b.png)
-
-<sub> A nasty case of yoghurt addiction. </sub>
-
-
 ![00165-603508287-DDIM-64-7 5-ac07d41f-20221122154627](https://user-images.githubusercontent.com/15731540/203716695-ab8d5764-0e68-414f-951e-29edac4cab5b.png)
 
 <sub> MOAR KITTENS </sub>
