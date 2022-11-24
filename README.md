@@ -18,7 +18,7 @@ Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.c
 
 ## The look
 
-![image](https://user-images.githubusercontent.com/15731540/203705906-15913db0-96af-4f35-97e5-ce33cc04b6ea.png)
+![image](https://user-images.githubusercontent.com/15731540/203795296-3b917ab2-f0a3-4202-8b17-8d115b22bbe8.png)
 
 <sub>OK I know that's a big screenshot </sub>
 
