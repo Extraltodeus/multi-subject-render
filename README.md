@@ -60,5 +60,52 @@ For my example I made tree penguins :
 
 #### The scary miscellaneous options :
 
+- The foreground distance from center multiplier will make your characters closer together if you select a lower value, further with a higher one. I usually stick in between 0.8 and 1.0
+
+- Foreground Y shift : the center character will always be at the same height. The you multiply the value of that slider by the position of the foreground subject from the center. That gives you how many pixels lower they will be. Think about some super hero movie poster with the sidies slightly lower. That's what this slider does.
+
+- Foreground depth cut treshold is the scary one. At 0 the backgrounds of your foregrounds subjects will be opaque. At 255 the entire foreground will be transparent. The best values are in between 50-60 for cartoon-like characters and 90-100 for photorealistic subjects. Too much and they lose their heads, not enough and you get some rock that were sitting on in your final blend.
+
+- Random superposition : the default is to have the center character in front. if you enable that it might not be the case anymore. That's a cool option depending on what you want to do.
+
+- The center character will be behind the others. If you use the previous option this one becomes useless.
+
+- face correction is only for the final blend. If you want that on every foreground subjects, set it in your main UI. It think it's best to enable both if you make photorealistic stuff.
+
 ![image](https://user-images.githubusercontent.com/15731540/203711743-957edd16-0ed3-49a2-b643-068f1e541d89.png)
+
+### Tips and tricks :
+
+- using (bokeh) and (F1.8:1.2) will make blurry backgrounds which will make it easier for the depth analysis to do a clean cut of the backgrounds.
+- "wide angle" in your prompt will give your more chances to have characters that won't be cropped
+- "skin details" or "detailed skin" raises the chances of having close-ups. I prefer to avoid.
+- Not enough denoising/steps on your final blend will make it look like you used scissors on your moms Vogue catalogue and pasted the ladies onto your dads Lord of the Rings favorite poster. Don't do that.
+- Too much denoising/steps might make the characters all look the same. It's all about finding the right middle value for your needs.
+
+
+A few more examples :
+
+![00129-603508287-DDIM-64-7 5-ac07d41f-20221122153921](https://user-images.githubusercontent.com/15731540/203713258-aaeffbf7-5772-458d-804a-d09be35531fb.png)
+
+<sub> Aren't they cute without oxygen? </sub>
+
+
+![00254-1268283421-Euler a-68-7 5-ac07d41f-20221124060832](https://user-images.githubusercontent.com/15731540/203714476-c07a389d-25ee-48c7-9079-a95ff6c03248.png)
+
+<sub> You can also make absolute non-sens like Jesus, a t-rex and santa.</sub>
+
+
+
+![00051-3908280031-DPM++ 2M-74-7 5-ac07d41f-20221122145842](https://user-images.githubusercontent.com/15731540/203714620-e45dc7d6-ec26-4aee-b0e3-e1055d98c850.png)
+
+<sub>Of course you can make a harem just for yourself.</sub>
+
+
+
+![00258-4071542780-Euler a-70-7-579c005f-20221123231254](https://user-images.githubusercontent.com/15731540/203715010-216c5a8d-4f87-414a-8b85-c544349a556b.png)
+
+<sub> A nasty case of yoghurt addiction for sure. </sub>
+
+
+<sub></sub>
 
