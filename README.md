@@ -117,7 +117,7 @@ Thanks to [thygate](https://github.com/thygate) for letting me blatantly copy-pa
 
 ## A few more examples
 
-##### An attempt at recreating the ["Distracted boyfriend"](https://en.wikipedia.org/wiki/Distracted_boyfriend) meme. Without influencing the directions in which they are looking.
+##### An attempt at recreating the ["Distracted boyfriend"](https://en.wikipedia.org/wiki/Distracted_boyfriend) meme. Without influencing the directions in which they are looking. 100% txt2img.
 
 ![00241-2439212203-Euler a-100-7 5-ac07d41f-20221124151538](https://user-images.githubusercontent.com/15731540/203824326-e3c02bb1-6318-4083-894d-4aa9e26903b2.png)
 ![00287-2439212203-Euler a-100-7 5-ac07d41f-20221124151832](https://user-images.githubusercontent.com/15731540/203824335-170d9620-2d7c-4538-a529-ac7b51ac718d.png)
