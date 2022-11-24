@@ -1,4 +1,6 @@
 
+  
+
 # multi-subject-render
 Generate multiple complex subjects all at once!
 
@@ -8,7 +10,7 @@ Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.c
 
 <sub>_Kyaaaaaaaaaaaaaaaaa!_</sub>
 
-### For more examples scroll all the way down!
+[Jump to examples!](#a-few-more-examples)
 
 ## 💥💥💥 Installation 💥💥💥
 
@@ -96,7 +98,7 @@ For my example I made tree penguins :
 
 ![image](https://user-images.githubusercontent.com/15731540/203711743-957edd16-0ed3-49a2-b643-068f1e541d89.png)
 
-### Tips and tricks :
+## Tips and tricks :
 
 - using (bokeh) and (F1.8:1.2) will make blurry backgrounds which will make it easier for the depth analysis to do a clean cut of the backgrounds.
 - "wide angle" in your prompt will give your more chances to have characters that won't be cropped
@@ -111,7 +113,7 @@ For my example I made tree penguins :
 - There can be bugs.
 
 
-## Credits :
+## Credits
 
 Thanks to [thygate](https://github.com/thygate) for letting me blatantly copy-paste some of his functions for the depth analysis.
 
