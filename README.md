@@ -118,5 +118,23 @@ A few more examples :
 <sub> A nasty case of yoghurt addiction for sure. </sub>
 
 
+![00165-603508287-DDIM-64-7 5-ac07d41f-20221122154627](https://user-images.githubusercontent.com/15731540/203716695-ab8d5764-0e68-414f-951e-29edac4cab5b.png)
+
+<sub> MOAR KITTENS </sub>
+
+
+![00145-2998285171-DDIM-92-7 5-ac07d41f-20221124054225](https://user-images.githubusercontent.com/15731540/203716812-ea8a46b0-bbed-4f21-a5d3-10f231f3577c.png)
+
+<sub> This is what too low denoising on the final blend looks like. Yuk!</sub>
+
+
+![affafasffasffasfas - Copie](https://user-images.githubusercontent.com/15731540/203717083-5938b8c5-2e20-45a0-9871-2558b7f7ff50.png)
+
+
+<sub>Guess why I had to censor the lowest part?</sub>
+
 <sub></sub>
+<sub></sub>
+<sub></sub>
+
 
