@@ -103,6 +103,7 @@ For my example I made tree penguins :
 - "skin details" or "detailed skin" raises the chances of having close-ups. I prefer to avoid.
 - Not enough denoising/steps on your final blend will make it look like you used scissors on your moms Vogue catalogue and pasted the ladies onto your dads Lord of the Rings favorite poster. Don't do that.
 - Too much denoising/steps might make the characters all look the same. It's all about finding the right middle value for your needs.
+- Making your foreground subjects have less height than the final image might make them look cropped.
 
 ## Known issues
 
