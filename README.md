@@ -133,7 +133,7 @@ For my example I made tree penguins :
 
 Thanks to [thygate](https://github.com/thygate) for letting me blatantly copy-paste some of his functions for the depth analysis integration in the webui.
 
-This repository runs with MiDaS.
+This repository runs with [MiDaS](https://github.com/isl-org/MiDaS).
 
 ```
 @ARTICLE {Ranftl2022,
