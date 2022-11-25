@@ -62,6 +62,7 @@ For my example I decided to generate a bowling alley at 512x512 pixels :
 - You case use wildcards.
 - If you only use the first line, that line will be used for every foreground subject that will be generated.
 - If you use multiple lines, each line will be used for each foreground subject.
+- The negative prompt is carried over everything
 
 ![image](https://user-images.githubusercontent.com/15731540/203708718-9a80f197-5d52-41b2-a98d-12cf006a6c2a.png)
 
