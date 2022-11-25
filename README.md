@@ -124,6 +124,9 @@ For my example I made tree penguins :
 - "List index out of range" might be barfed into your terminal if you interrupt a generation. I missed a state interrupt somewhere. It does not cause any problem by itself.
 - Do not use the "high res fix" checkbox. The blend size slider at the end will trigger it if you use a higher resolution than your background image. So keep your normal UI size sliders near 512*512.
 - There can be bugs.
+- AttributeError: 'StableDiffusionProcessingTxt2Img' object has no attribute 'sampler_name' : You need to update your webui ("git pull" in a commandline from your webui folder)
+- Do check the other issues before opening a new one and try to give as many details as possible.
+- Use the discussion tab if it's not about a bug.
 
 
 ## Credits
