@@ -131,7 +131,7 @@ For my example I made tree penguins :
 
 ## Credits
 
-Thanks to [thygate](https://github.com/thygate) for letting me blatantly copy-paste some of his functions for the depth analysis.
+Thanks to [thygate](https://github.com/thygate) for letting me blatantly copy-paste some of his functions for the depth analysis integration in the webui.
 
 This repository runs with MiDaS.
 
