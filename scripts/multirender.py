@@ -24,6 +24,9 @@ def module_from_file(module_name, file_path):
 class Script(scripts.Script):
     def title(self):
         return "Multi Subject Rendering"
+    
+    def show(self, is_img2img):
+        return not is_img2img
 
     def ui(self, is_img2img):
         if is_img2img: return
