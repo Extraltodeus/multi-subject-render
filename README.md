@@ -111,7 +111,7 @@ For my example I made tree penguins :
 - Not enough denoising/steps on your final blend will make it look like you used scissors on your moms Vogue catalogue and pasted the ladies onto your dads Lord of the Rings favorite poster. Don't do that.
 - Too much denoising/steps might make the characters all look the same. It's all about finding the right middle value for your needs.
 - Making your foreground subjects have less height than the final image might make them look cropped.
-- You can now use the "Mask foregrounds in blend" checkbox to get something that looks more like a collage and use this in img2img with [my other extension](https://github.com/Extraltodeus/depthmap2mask) is you want your foreground subjects to be less alterated by the img2img blend.
+- You can now use the "Mask foregrounds in blend" checkbox to get something that looks more like a collage and use this in img2img with [my other extension](https://github.com/Extraltodeus/depthmap2mask) if you want your foreground subjects to be less alterated by the img2img blend.
 
 ## Known issues
 
