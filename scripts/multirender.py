@@ -1,6 +1,6 @@
 from modules.processing import Processed, StableDiffusionProcessingImg2Img, process_images, images, fix_seed
 from modules.shared import opts, cmd_opts, state
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, ImageFilter
 from math import ceil
 import cv2
 
@@ -24,7 +24,7 @@ def module_from_file(module_name, file_path):
 class Script(scripts.Script):
     def title(self):
         return "Multi Subject Rendering"
-    
+
     def show(self, is_img2img):
         return not is_img2img
 
@@ -67,6 +67,8 @@ class Script(scripts.Script):
             foregen_face_correction = gr.Checkbox(label='Face correction ', value=True)
             foregen_random_superposition = gr.Checkbox(label='Random superposition ', value=False)
             foregen_reverse_order = gr.Checkbox(label='Reverse order ', value=False)
+            foregen_make_mask = gr.Checkbox(label='Mask foregrounds in blend', value=False)
+        # foregen_mask_blur = gr.Slider(minimum=0, maximum=12, step=1, label='Mask blur', value=4)
         return    [foregen_prompt,
                     foregen_iter,
                     foregen_steps,
@@ -90,7 +92,9 @@ class Script(scripts.Script):
                     foregen_save_all,
                     foregen_face_correction,
                     foregen_random_superposition,
-                    foregen_reverse_order]
+                    foregen_reverse_order,
+                    foregen_make_mask
+                    ]
 
 
 
@@ -118,7 +122,8 @@ class Script(scripts.Script):
                     foregen_save_all,
                     foregen_face_correction,
                     foregen_random_superposition,
-                    foregen_reverse_order
+                    foregen_reverse_order,
+                    foregen_make_mask
                     ):
         initial_CLIP = opts.data["CLIP_stop_at_last_layers"]
         sdmg = module_from_file("simple_depthmap",'extensions/multi-subject-render/scripts/simple_depthmap.py')
@@ -235,6 +240,7 @@ class Script(scripts.Script):
             if o_width != foregen_blend_size_x or o_height != foregen_blend_size_y :
                 background_image = background_image.resize((foregen_blend_size_x, foregen_blend_size_y), Image.Resampling.LANCZOS)
 
+            image_mask_background = Image.new(mode = "RGBA", size = (foregen_blend_size_x, foregen_blend_size_y), color = (0, 0, 0, 255))
             # cut depthmaps and stick foreground on the background
             random.seed(p.seed)
             random_order = [k for k in range(foregen_iter)]
@@ -249,18 +255,29 @@ class Script(scripts.Script):
                 foreground_image      = cut_depth_mask(foreground_image,foreground_image_mask,foregen_treshold)
                 # paste foregrounds onto background
                 background_image      = paste_foreground(background_image,foreground_image,random_order[f],foregen_iter,foregen_x_shift,foregen_y_shift,foregen_reverse_order)
+                #make mask
+                if foregen_make_mask:
+                    foreground_image_mask      = cut_depth_mask(foreground_image_mask,foreground_image_mask,foregen_treshold)
+                    image_mask_background = paste_foreground(image_mask_background,foreground_image_mask,random_order[f],foregen_iter,foregen_x_shift,foregen_y_shift,foregen_reverse_order)
 
+            if foregen_make_mask:
+                image_mask_p = image_mask_background
+                image_mask_p.save("/content/AI_PICS/outg1/mask_back.png")
+                # if foregen_mask_blur > 0:
+                #     image_mask_p = image_mask_p.filter(ImageFilter.GaussianBlur(foregen_mask_blur)) # for some reason mask blur did not seem to work so I make it here.
+            else:
+                image_mask_p = None
             # final blend
             img2img_processing = StableDiffusionProcessingImg2Img(
                 init_images=[background_image],
                 resize_mode=0,
                 denoising_strength=foregen_blend_denoising_strength,
-                mask=None,
-                mask_blur=4,
-                inpainting_fill=0,
-                inpaint_full_res=True,
+                mask=image_mask_p,
+                mask_blur=0,
+                inpainting_fill=1,
+                inpaint_full_res=False,
                 inpaint_full_res_padding=0,
-                inpainting_mask_invert=0,
+                inpainting_mask_invert=1,
                 sd_model=p.sd_model,
                 outpath_samples=p.outpath_samples,
                 outpath_grids=p.outpath_grids,
