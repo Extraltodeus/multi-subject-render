@@ -60,7 +60,7 @@ class Script(scripts.Script):
         # Misc options
         foregen_x_shift  = gr.Slider(minimum=0, maximum=2, step=0.01, label='Foreground distance from center multiplier  ', value=1)
         foregen_y_shift  = gr.Slider(minimum=0, maximum=100, step=1, label='Foreground Y shift (far from center = lower) ', value=0)
-        foregen_treshold = gr.Slider(minimum=0, maximum=255, step=1, label='Foreground depth cut treshold     ', value=92)
+        foregen_treshold = gr.Slider(minimum=0, maximum=255, step=1, label='Foreground depth cut threshold', value=92)
         with gr.Row():
             foregen_save_background = gr.Checkbox(label='Save background ', value=True)
             foregen_save_all        = gr.Checkbox(label='Save all foreground images ', value=True)
