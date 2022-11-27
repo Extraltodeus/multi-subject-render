@@ -275,7 +275,7 @@ class Script(scripts.Script):
                 mask=image_mask_p,
                 mask_blur=0,
                 inpainting_fill=1,
-                inpaint_full_res=False,
+                inpaint_full_res=True,
                 inpaint_full_res_padding=0,
                 inpainting_mask_invert=1,
                 sd_model=p.sd_model,
