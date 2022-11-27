@@ -12,12 +12,6 @@ Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.c
 
 [Jump to examples!](#a-few-more-examples)
 
-# TEMPORARY NOTE
-
-A depth aware img2img masking will be added soon to that extension. Just like SD 2.0
-
-[Proof of concept here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/5037#issuecomment-1326842734)
-
 ## 💥 Installation 💥
 
 Copy the url of that repository into the extension tab :
