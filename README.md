@@ -24,10 +24,6 @@ OR copy that repository in your extension folder :
 
 You might need to restart the whole UI. Maybe twice.
 
-if you are on colab you can also add this line in a code block before starting the UI/after the installation cells :
-
-    !git clone https://github.com/Extraltodeus/multi-subject-render.git /content/stable-diffusion-webui/extensions/multi-subject-render
-
 ## The look
 
 ![image](https://user-images.githubusercontent.com/15731540/203795296-3b917ab2-f0a3-4202-8b17-8d115b22bbe8.png)
@@ -125,7 +121,7 @@ For my example I made tree penguins :
 - AttributeError: 'StableDiffusionProcessingTxt2Img' object has no attribute 'sampler_name' : You need to update your webui ("git pull" in a commandline from your webui folder)
 - Do check the other issues before opening a new one and try to give as many details as possible.
 - Use the discussion tab if it's not about a bug.
-
+- Make sure to run the latest webui version by doing "git pull" from your webui folder!
 
 ## Credits
 
