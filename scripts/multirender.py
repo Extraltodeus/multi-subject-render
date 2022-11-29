@@ -262,7 +262,6 @@ class Script(scripts.Script):
 
             if foregen_make_mask:
                 image_mask_p = image_mask_background
-                image_mask_p.save("/content/AI_PICS/outg1/mask_back.png")
                 # if foregen_mask_blur > 0:
                 #     image_mask_p = image_mask_p.filter(ImageFilter.GaussianBlur(foregen_mask_blur)) # for some reason mask blur did not seem to work so I make it here.
             else:
