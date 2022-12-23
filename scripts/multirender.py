@@ -32,7 +32,12 @@ class Script(scripts.Script):
         if is_img2img: return
         txt2img_samplers_names = [s.name for s in sd_samplers.samplers]
         img2img_samplers_names = [s.name for s in sd_samplers.samplers_for_img2img]
-
+        midas_models = ["midas_v21_small","midas_v21","dpt_hybrid","dpt_large"]
+        
+        #pick model
+        with gr.Box():
+            foregen_midas_model = gr.Dropdown(label="MiDaS model (midas_v21_small - smallest and fastest > dpt_large - higher quality, biggest and slowest)", choices=midas_models, value="midas_v21_small")
+        
         # foreground UI
         with gr.Box():
             foregen_prompt      = gr.Textbox(label="Foreground prompt  ", lines=5, max_lines=2000)
@@ -93,7 +98,8 @@ class Script(scripts.Script):
                     foregen_face_correction,
                     foregen_random_superposition,
                     foregen_reverse_order,
-                    foregen_make_mask
+                    foregen_make_mask,
+                    foregen_midas_model
                     ]
 
 
@@ -123,11 +129,12 @@ class Script(scripts.Script):
                     foregen_face_correction,
                     foregen_random_superposition,
                     foregen_reverse_order,
-                    foregen_make_mask
+                    foregen_make_mask,
+                    foregen_midas_model
                     ):
         initial_CLIP = opts.data["CLIP_stop_at_last_layers"]
         sdmg = module_from_file("simple_depthmap",'extensions/multi-subject-render/scripts/simple_depthmap.py')
-        sdmg = sdmg.SimpleDepthMapGenerator() #import midas
+        sdmg = sdmg.SimpleDepthMapGenerator(foregen_midas_model) #import midas
 
         def cut_depth_mask(img,mask_img,foregen_treshold):
             img = img.convert("RGBA")
