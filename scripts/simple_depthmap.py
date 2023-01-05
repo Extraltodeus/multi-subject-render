@@ -16,7 +16,8 @@ from repositories.midas.midas.transforms import Resize, NormalizeImage, PrepareF
 import numpy as np
 
 class SimpleDepthMapGenerator(object):
-    def __init__(self):
+    def __init__(self,chosen_model):
+        self.chosen_model = chosen_model
         super(SimpleDepthMapGenerator, self).__init__()
 
         def download_file(filename, url):
@@ -33,10 +34,27 @@ class SimpleDepthMapGenerator(object):
         # create path to model if not present
         os.makedirs(model_dir, exist_ok=True)
         print("Loading midas model weights ..")
-        model_path = f"{model_dir}/midas_v21_small-70d6b9c8.pt"
+
+        if self.chosen_model == "dpt_large":
+            model_path = f"{model_dir}/dpt_large-midas-2f21e586.pt"
+        elif self.chosen_model == "dpt_hybrid":
+            model_path = f"{model_dir}/dpt_hybrid-midas-501f0c75.pt"
+        elif self.chosen_model == "midas_v21_small":
+            model_path = f"{model_dir}/midas_v21_small-70d6b9c8.pt"
+        elif self.chosen_model == "midas_v21":
+            model_path = f"{model_dir}/midas_v21-f6b98070.pt"
         print(model_path)
+
         if not os.path.exists(model_path):
-            download_file(model_path,"https://github.com/AlexeyAB/MiDaS/releases/download/midas_dpt/midas_v21_small-70d6b9c8.pt")
+            if self.chosen_model == "dpt_large":
+                download_file(model_path,"https://github.com/isl-org/MiDaS/releases/download/v3/dpt_large-midas-2f21e586.pt")
+            elif self.chosen_model == "dpt_hybrid":
+                download_file(model_path,"https://github.com/isl-org/MiDaS/releases/download/v3/dpt_hybrid-midas-501f0c75.pt")
+            elif self.chosen_model == "midas_v21_small":
+                download_file(model_path,"https://github.com/isl-org/MiDaS/releases/download/v2_1/midas_v21_small-70d6b9c8.pt")
+            elif self.chosen_model == "midas_v21":
+                download_file(model_path,"https://github.com/isl-org/MiDaS/releases/download/v2_1/midas_v21-f6b98070.pt")
+            
 
 
     def calculate_depth_map_for_waifus(self,image):
@@ -44,20 +62,55 @@ class SimpleDepthMapGenerator(object):
             device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
             print("device: %s" % device)
 
-            #"midas_v21_small"
             model_dir = "./models/midas"
-            model_path = f"{model_dir}/midas_v21_small-70d6b9c8.pt"
-            model = MidasNet_small(model_path, features=64, backbone="efficientnet_lite3", exportable=True, non_negative=True, blocks={'expand': True})
-            net_w, net_h = 256, 256
-            resize_mode="upper_bound"
-            normalization = NormalizeImage(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+            if self.chosen_model == "dpt_large":
+                model_path = f"{model_dir}/dpt_large-midas-2f21e586.pt"
+            elif self.chosen_model == "dpt_hybrid":
+                model_path = f"{model_dir}/dpt_hybrid-midas-501f0c75.pt"
+            elif self.chosen_model == "midas_v21_small":
+                model_path = f"{model_dir}/midas_v21_small-70d6b9c8.pt"
+            elif self.chosen_model == "midas_v21":
+                model_path = f"{model_dir}/midas_v21-f6b98070.pt"
 
+            #load model
+            if self.chosen_model == "dpt_large": # DPT-Large
+                model = DPTDepthModel(
+                    path=model_path,
+                    backbone="vitl16_384",
+                    non_negative=True,
+                )
+                net_w, net_h = 384, 384
+                resize_mode = "minimal"
+                normalization = NormalizeImage(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
+            elif self.chosen_model == "dpt_hybrid": #DPT-Hybrid
+                model = DPTDepthModel(
+                    path=model_path,
+                    backbone="vitb_rn50_384",
+                    non_negative=True,
+                )
+                net_w, net_h = 384, 384
+                resize_mode="minimal"
+                normalization = NormalizeImage(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
+            elif self.chosen_model == "midas_v21":
+                model = MidasNet(model_path, non_negative=True)
+                net_w, net_h = 384, 384
+                resize_mode="upper_bound"
+                normalization = NormalizeImage(
+                    mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]
+                )
+            elif self.chosen_model == "midas_v21_small":
+                model = MidasNet_small(model_path, features=64, backbone="efficientnet_lite3", exportable=True, non_negative=True, blocks={'expand': True})
+                net_w, net_h = 256, 256
+                resize_mode="upper_bound"
+                normalization = NormalizeImage(
+                    mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]
+                )
             # init transform
             transform = Compose(
                 [
                     Resize(
-                        384,
-                        384,
+                        net_w,
+                        net_h,
                         resize_target=None,
                         keep_aspect_ratio=True,
                         ensure_multiple_of=32,
@@ -68,6 +121,7 @@ class SimpleDepthMapGenerator(object):
                     PrepareForNet(),
                 ]
             )
+
 
             model.eval()
 
