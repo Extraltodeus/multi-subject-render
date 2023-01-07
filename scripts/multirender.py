@@ -32,11 +32,17 @@ class Script(scripts.Script):
         if is_img2img: return
         txt2img_samplers_names = [s.name for s in sd_samplers.samplers]
         img2img_samplers_names = [s.name for s in sd_samplers.samplers_for_img2img]
-        midas_models = ["midas_v21_small","midas_v21","dpt_hybrid","dpt_large"]
+        midas_models = ["midas_v21_small","dpt_swin2_tiny_256","dpt_swin2_large_384","dpt_beit_large_512"]
         
         #pick model
         with gr.Box():
-            foregen_midas_model = gr.Dropdown(label="MiDaS model (midas_v21_small - smallest and fastest > dpt_large - higher quality, biggest and slowest)", choices=midas_models, value="midas_v21_small")
+            with gr.Box():
+                gr.Markdown(
+                """
+                #### ATTENTION! Largest model (dpt_beit_large_512) weighs 1.5 GB, it will take A WHILE to download.
+
+                """)
+            foregen_midas_model = gr.Dropdown(label="MiDaS model (models are ordered from smallest and least accurate (midas_v21_small) to biggest and most accurate (dpt_beit_large_512))", choices=midas_models, value="midas_v21_small")
         
         # foreground UI
         with gr.Box():
