@@ -187,8 +187,7 @@ class Script(scripts.Script):
         o_width     = p.width
         o_height    = p.height
         o_denoising_strength = p.denoising_strength
-        o_firstphase_width   = p.firstphase_width
-        o_firstphase_height  = p.firstphase_height
+
 
         n_iter=p.n_iter
         for j in range(n_iter):
@@ -209,8 +208,7 @@ class Script(scripts.Script):
             p.width = o_width
             p.height = o_height
             p.denoising_strength = o_denoising_strength
-            p.firstphase_width = o_firstphase_width
-            p.firstphase_height = o_firstphase_height
+
             proc = process_images(p)
             background_image = proc.images[0]
 
@@ -234,8 +232,7 @@ class Script(scripts.Script):
                 p.width     = foregen_size_x
                 p.height    = foregen_size_y
                 p.denoising_strength  = None
-                p.firstphase_width    = None
-                p.firstphase_height   = None
+
                 proc = process_images(p)
                 foregrounds.append(proc.images[0])
 
