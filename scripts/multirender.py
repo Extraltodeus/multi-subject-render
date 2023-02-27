@@ -51,6 +51,7 @@ class Script(scripts.Script):
             foregen_steps       = gr.Slider(minimum=1, maximum=120, step=1, label='foreground steps  ', value=24)
             foregen_cfg_scale   = gr.Slider(minimum=1, maximum=30, step=0.1, label='foreground cfg scale  ', value=12.5)
             foregen_seed_shift  = gr.Slider(minimum=0, maximum=1000, step=1, label='foreground new seed+  ', value=1000)
+            foregen_custom_seed = gr.Textbox(label="Foreground seeds (optional)  ", lines=5, max_lines=2000)
             foregen_sampler     = gr.Dropdown(label="foreground sampler", choices=txt2img_samplers_names, value="DDIM")
             foregen_clip        = gr.Slider(minimum=0, maximum=12, step=1, label='change clip for foreground (0 = no interaction)  ', value=0)
             with gr.Row():
@@ -85,6 +86,7 @@ class Script(scripts.Script):
                     foregen_steps,
                     foregen_cfg_scale,
                     foregen_seed_shift,
+                    foregen_custom_seed,
                     foregen_sampler,
                     foregen_clip,
                     foregen_size_x,
@@ -116,6 +118,7 @@ class Script(scripts.Script):
                     foregen_steps,
                     foregen_cfg_scale,
                     foregen_seed_shift,
+                    foregen_custom_seed,
                     foregen_sampler,
                     foregen_clip,
                     foregen_size_x,
@@ -220,6 +223,7 @@ class Script(scripts.Script):
 
             # foregrounds processing
             foregen_prompts = foregen_prompt.splitlines()
+            foregen_custom_seeds = foregen_custom_seed.splitlines()
             foregrounds = []
             if foregen_clip > 0:
                 opts.data["CLIP_stop_at_last_layers"] = foregen_clip
@@ -229,7 +233,7 @@ class Script(scripts.Script):
                         opts.data["CLIP_stop_at_last_layers"] = initial_CLIP
                     break
                 p.prompt    = foregen_prompts[i] if len(foregen_prompts) > 1 else foregen_prompt
-                p.seed      = p.seed + foregen_seed_shift
+                p.seed      = int(foregen_custom_seeds[i]) if len(foregen_custom_seeds) > 1 else p.seed + foregen_seed_shift
                 p.subseed   = p.subseed + 1 if p.subseed_strength > 0 else p.subseed
                 p.cfg_scale = foregen_cfg_scale
                 p.steps     = foregen_steps
