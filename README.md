@@ -6,7 +6,9 @@ Generate multiple complex subjects all at once!
 
 Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) repository.
 
-![00157-1355719032-DDIM-64-7 5-579c005f-20221123190321](https://user-images.githubusercontent.com/15731540/203708003-9cbe7695-f512-4d7c-9cbb-54f8d6cb17f0.png)
+
+![00165-603508287-DDIM-64-7 5-ac07d41f-20221122154627](https://user-images.githubusercontent.com/15731540/223133067-04b1ccf5-41b8-4076-8726-6e8ced950e76.png)
+
 
 <sub>_Kyaaaaaaaaaaaaaaaaa!_</sub>
 
