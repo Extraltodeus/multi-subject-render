@@ -10,7 +10,7 @@ Made as a script for the [AUTOMATIC1111/stable-diffusion-webui](https://github.c
 ![00165-603508287-DDIM-64-7 5-ac07d41f-20221122154627](https://user-images.githubusercontent.com/15731540/223133067-04b1ccf5-41b8-4076-8726-6e8ced950e76.png)
 
 
-<sub>_Kyaaaaaaaaaaaaaaaaa!_</sub>
+<sub>_Miaouuuuuuuuu!_</sub>
 
 [Jump to examples!](#a-few-more-examples)
 
