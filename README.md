@@ -176,9 +176,6 @@ This repository runs with [MiDaS](https://github.com/isl-org/MiDaS).
 
 Now a few more groups of "super heroes" from the same batch as the first image here. Except maybe for the portraits.
 
-![00283-1347027508-DDIM-69-7 5-579c005f-20221123193425](https://user-images.githubusercontent.com/15731540/203719641-364dd072-4360-4afb-8a84-032cd5013f72.png)
-![00238-2109887726-DDIM-69-7 5-579c005f-20221123192356](https://user-images.githubusercontent.com/15731540/203719659-4be6c008-eeca-4b53-b3e3-e8f31b933ba1.png)
-![00349-3785266290-DDIM-76-7 5-579c005f-20221123194925](https://user-images.githubusercontent.com/15731540/203719670-03062253-e746-4b02-9517-f0576142e3c1.png)
 ![00290-1347027509-DDIM-69-7 5-579c005f-20221123193425](https://user-images.githubusercontent.com/15731540/203719705-15dfe420-1c08-4714-8892-632df4d9f3b4.png)
 
 ### Wrong settings examples
@@ -191,9 +188,4 @@ Now a few more groups of "super heroes" from the same batch as the first image h
 
 <sub> Same issue here. Looks like a funny kid collage. Grandma will love it because you typed your prompts with love and she knows it.</sub>
 
-
-![affafasffasffasfas - Copie](https://user-images.githubusercontent.com/15731540/203717083-5938b8c5-2e20-45a0-9871-2558b7f7ff50.png)
-
-
-<sub>Guess why I had to censor the lowest part. This is how too much denoising looks like. They look all the same.</sub>
 
